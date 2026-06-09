@@ -81,6 +81,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "Every place on Earth holds many layers of data. AI agents ask questions of those layers, and value flows back to whoever provided the most trustworthy data." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:title", content: "Why Hypermaps — An open geospatial layer for humanity" },
+      { name: "twitter:title", content: "Why Hypermaps — An open geospatial layer for humanity" },
+      { property: "og:description", content: "Every place on Earth holds many layers of data. AI agents ask questions of those layers, and value flows back to whoever provided the most trustworthy data." },
+      { name: "twitter:description", content: "Every place on Earth holds many layers of data. AI agents ask questions of those layers, and value flows back to whoever provided the most trustworthy data." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/bf8b61fc-fa57-4fc9-b59c-827e79980f04/id-preview-659b57e5--bb55ba98-0fc6-4503-8ba0-4ac4b115fd85.lovable.app-1780988521157.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/bf8b61fc-fa57-4fc9-b59c-827e79980f04/id-preview-659b57e5--bb55ba98-0fc6-4503-8ba0-4ac4b115fd85.lovable.app-1780988521157.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
