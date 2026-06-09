@@ -1,29 +1,45 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { HorizontalDeck } from "@/components/deck/HorizontalDeck";
+import { Panel1Hook } from "@/components/panels/Panel1Hook";
+import { Panel2ValueLoop } from "@/components/panels/Panel2ValueLoop";
+import { Panel3OnePlace } from "@/components/panels/Panel3OnePlace";
+import { Panel4WhyOpen } from "@/components/panels/Panel4WhyOpen";
+import { Panel5WhatItIs } from "@/components/panels/Panel5WhatItIs";
+import { Panel6Reliability } from "@/components/panels/Panel6Reliability";
+import { Panel7NextWave } from "@/components/panels/Panel7NextWave";
+import { Panel8RisingTide } from "@/components/panels/Panel8RisingTide";
+import { Panel9Endgame } from "@/components/panels/Panel9Endgame";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Your App" },
-      { name: "description", content: "Replace this with a one-sentence description of your app." },
-      { property: "og:title", content: "Your App" },
-      { property: "og:description", content: "Replace this with a one-sentence description of your app." },
+      { title: "Why Hypermaps — An open geospatial layer for humanity" },
+      { name: "description", content: "Every place on Earth holds many layers of data. AI agents ask questions of those layers, and value flows back to whoever provided the most trustworthy data." },
+      { property: "og:title", content: "Why Hypermaps — An open geospatial layer for humanity" },
+      { property: "og:description", content: "Geospatial awareness for AGI. An open, federated data layer of real-world places — built for the age of AI." },
+      { name: "twitter:title", content: "Why Hypermaps" },
+      { name: "twitter:description", content: "An open geospatial layer for humanity." },
     ],
   }),
-  component: Index,
+  component: WhyHypermaps,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
-function Index() {
+const PANELS = [
+  { label: "Hook", node: <Panel1Hook /> },
+  { label: "Value Loop", node: <Panel2ValueLoop /> },
+  { label: "One place, infinite depth", node: <Panel3OnePlace /> },
+  { label: "Why it has to be open", node: <Panel4WhyOpen /> },
+  { label: "What Hypermaps is", node: <Panel5WhatItIs /> },
+  { label: "Reliability is the currency of truth", node: <Panel6Reliability /> },
+  { label: "The next wave it unlocks", node: <Panel7NextWave /> },
+  { label: "A rising tide", node: <Panel8RisingTide /> },
+  { label: "Endgame", node: <Panel9Endgame /> },
+];
+
+function WhyHypermaps() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <HorizontalDeck labels={PANELS.map((p) => p.label)}>
+      {PANELS.map((p) => p.node)}
+    </HorizontalDeck>
   );
 }
