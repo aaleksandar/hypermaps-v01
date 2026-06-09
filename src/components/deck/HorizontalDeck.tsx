@@ -1,4 +1,5 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
+import { GraphCanvas } from "./GraphCanvas";
 
 type DeckCtx = {
   index: number;
