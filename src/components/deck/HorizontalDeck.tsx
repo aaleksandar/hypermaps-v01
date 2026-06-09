@@ -124,6 +124,7 @@ export function HorizontalDeck({ children, labels }: { children: ReactNode[]; la
   return (
     <Ctx.Provider value={ctx}>
       <div className="fixed inset-0 overflow-hidden bg-paper-0 select-none">
+        <GraphCanvas count={count} />
         <div
           className="flex h-full"
           style={{ width: `${count * 100}vw`, transform, transition: dragStart.current ? "none" : transition, willChange: "transform" }}

@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { HorizontalDeck } from "@/components/deck/HorizontalDeck";
-import { GraphCanvas } from "@/components/deck/GraphCanvas";
 import { Panel1Hook } from "@/components/panels/Panel1Hook";
 import { Panel2ValueLoop } from "@/components/panels/Panel2ValueLoop";
 import { Panel3OnePlace } from "@/components/panels/Panel3OnePlace";
@@ -39,25 +38,8 @@ const PANELS = [
 
 function WhyHypermaps() {
   return (
-    <>
-      <GraphCanvasWrap count={PANELS.length} />
-      <HorizontalDeck labels={PANELS.map((p) => p.label)}>
-        {PANELS.map((p) => p.node)}
-      </HorizontalDeck>
-    </>
+    <HorizontalDeck labels={PANELS.map((p) => p.label)}>
+      {PANELS.map((p) => p.node)}
+    </HorizontalDeck>
   );
-}
-
-// GraphCanvas needs to live inside the deck provider for `useDeck` access.
-// Easiest: render it as the first child of HorizontalDeck — but children render
-// inside the translating row. So instead we mount a tiny wrapper component that
-// reads `useDeck` and renders the SVG in a fixed layer. To keep things simple,
-// move the GraphCanvas inside HorizontalDeck via a portal-like pattern: we
-// render it as panel-zero background through a sibling Provider consumer.
-function GraphCanvasWrap({ count }: { count: number }) {
-  // Render inside a hidden deck context shim? Simpler: GraphCanvas uses useDeck,
-  // so we render it via the deck provider. Move into the deck itself below.
-  // (Implemented inline by adding to HorizontalDeck via children prepend.)
-  void count;
-  return null;
 }
