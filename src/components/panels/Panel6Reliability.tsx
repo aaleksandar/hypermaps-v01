@@ -13,7 +13,7 @@ export function Panel6Reliability() {
     <PanelShell tag="RELIABILITY IS THE CURRENCY OF TRUTH">
       <div className="grid md:grid-cols-5 gap-12 items-center text-left">
         <div className="md:col-span-2">
-          <h2 className="text-5xl md:text-6xl font-medium text-ink-900 leading-tight">
+          <h2 className="text-4xl md:text-5xl font-medium text-ink-900 leading-tight">
             Truthful, useful data wins.
           </h2>
           <p className="mt-6 text-ink-600 max-w-md">

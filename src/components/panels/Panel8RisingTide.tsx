@@ -3,7 +3,7 @@ import { PanelShell } from "./PanelShell";
 export function Panel8RisingTide() {
   return (
     <PanelShell tag="A RISING TIDE">
-      <h2 className="text-5xl md:text-7xl font-medium text-ink-900 leading-[1.05] max-w-5xl mx-auto">
+      <h2 className="text-4xl md:text-6xl font-medium text-ink-900 leading-[1.05] max-w-4xl mx-auto">
         Everyone who contributes <span className="text-reward">shares in the value</span> they help create.
       </h2>
       <p className="mt-8 text-lg text-ink-600 max-w-2xl mx-auto">

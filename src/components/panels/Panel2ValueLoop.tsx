@@ -271,7 +271,7 @@ export function Panel2ValueLoop() {
 
         {/* Controls */}
         <div className="flex flex-col gap-4" data-deck-no-drag>
-          <h2 className="text-4xl md:text-5xl font-medium text-ink-900 leading-tight">
+          <h2 className="text-3xl md:text-4xl font-medium text-ink-900 leading-tight">
             The loop: a question goes out, value flows back.
           </h2>
           <p className="text-ink-600 text-sm">
