@@ -23,7 +23,7 @@ const FRICTIONS = [
 
 export function Panel2Problem() {
   return (
-    <PanelShell tag="THE PROBLEM TODAY">
+    <PanelShell tag="PROBLEM">
       <div className="grid lg:grid-cols-[1fr_1.1fr] gap-12 items-center text-left">
         {/* Left: thesis */}
         <div>
