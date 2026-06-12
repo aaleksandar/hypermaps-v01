@@ -30,7 +30,7 @@ const PANELS = [
   { label: "Problem", node: <Panel2Problem /> },
   { label: "Value Loop", node: <Panel2ValueLoop /> },
   { label: "One place, infinite depth", node: <Panel3OnePlace /> },
-  { label: "Why it has to be open", node: <Panel4WhyOpen /> },
+  
   { label: "What Hypermaps is", node: <Panel5WhatItIs /> },
   { label: "Reliability is the currency of truth", node: <Panel6Reliability /> },
   { label: "The next wave it unlocks", node: <Panel7NextWave /> },
