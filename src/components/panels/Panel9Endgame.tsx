@@ -26,7 +26,7 @@ export function Panel9Endgame() {
         <p className="text-ink-600 max-w-xl mx-auto">
           Owned by no single company. Governed in the open. Built to outlive any of us.
         </p>
-        <h2 className="mt-6 text-4xl md:text-6xl font-medium text-ink-900 leading-[1.05]">
+        <h2 className="mt-6 text-5xl md:text-7xl font-medium text-ink-900 leading-[1.05]">
           An open geospatial layer<br />for humanity.
         </h2>
         <p className="mt-10 text-ink-600 italic">Built in the open. Come build it with us.</p>

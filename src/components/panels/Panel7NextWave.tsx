@@ -15,7 +15,7 @@ export function Panel7NextWave() {
   return (
     <PanelShell tag="THE NEXT WAVE IT UNLOCKS">
       <div className="text-left max-w-6xl">
-        <h2 className="text-3xl md:text-5xl font-medium text-ink-900 leading-tight max-w-3xl">
+        <h2 className="text-4xl md:text-6xl font-medium text-ink-900 leading-tight max-w-4xl">
           A new Booking.com can't start today because the data is locked away.
           <span className="text-ink-400"> On an open layer, it can — and so can a thousand things we haven't imagined.</span>
         </h2>

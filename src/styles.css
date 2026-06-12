@@ -110,6 +110,12 @@
   font-family: var(--font-mono);
   text-transform: uppercase;
   letter-spacing: 0.18em;
-  font-size: 0.7rem;
+  font-size: 1rem;
   color: var(--ink-400);
+}
+
+@media (min-width: 768px) {
+  .font-mono-tag {
+    font-size: 1.125rem;
+  }
 }
