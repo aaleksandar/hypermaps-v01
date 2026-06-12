@@ -4,7 +4,7 @@ import { Panel1Hook } from "@/components/panels/Panel1Hook";
 import { Panel2Problem } from "@/components/panels/Panel2Problem";
 import { Panel2ValueLoop } from "@/components/panels/Panel2ValueLoop";
 import { Panel3OnePlace } from "@/components/panels/Panel3OnePlace";
-import { Panel4WhyOpen } from "@/components/panels/Panel4WhyOpen";
+
 import { Panel5WhatItIs } from "@/components/panels/Panel5WhatItIs";
 import { Panel6Reliability } from "@/components/panels/Panel6Reliability";
 import { Panel7NextWave } from "@/components/panels/Panel7NextWave";
