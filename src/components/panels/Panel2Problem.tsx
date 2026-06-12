@@ -32,11 +32,12 @@ export function Panel2Problem() {
           </h2>
           <p className="mt-6 text-ink-600 text-lg max-w-xl">
             Real-time point-of-interest data isn't easily available to AI. Foundation
-            models are not properly aware of the physical world — no model scores
-            above <span className="text-ink-900 font-medium">67% on real-world place reasoning</span>.
+            models are not properly aware of the physical world — <span className="text-ink-900 font-medium">foundational models score less than 67% on real-world place reasoning</span>.
           </p>
 
-          <div className="mt-8 flex flex-col gap-3">
+          <div className="mt-8 font-mono-tag text-ink-400">KEY REASONS</div>
+          <div className="mt-3 flex flex-col gap-3">
+
             {FRICTIONS.map((f, i) => (
               <motion.div
                 key={f.tag}
