@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { HorizontalDeck } from "@/components/deck/HorizontalDeck";
 import { Panel1Hook } from "@/components/panels/Panel1Hook";
+import { Panel2Problem } from "@/components/panels/Panel2Problem";
 import { Panel2ValueLoop } from "@/components/panels/Panel2ValueLoop";
 import { Panel3OnePlace } from "@/components/panels/Panel3OnePlace";
 import { Panel4WhyOpen } from "@/components/panels/Panel4WhyOpen";
@@ -26,6 +27,7 @@ export const Route = createFileRoute("/")({
 
 const PANELS = [
   { label: "Hook", node: <Panel1Hook /> },
+  { label: "The problem today", node: <Panel2Problem /> },
   { label: "Value Loop", node: <Panel2ValueLoop /> },
   { label: "One place, infinite depth", node: <Panel3OnePlace /> },
   { label: "Why it has to be open", node: <Panel4WhyOpen /> },
