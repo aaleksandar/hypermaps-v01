@@ -7,7 +7,7 @@ export function Panel4WhyOpen() {
     <PanelShell tag="WHY IT HAS TO BE OPEN">
       <div className="grid md:grid-cols-5 gap-10 items-center text-left">
         <div className="md:col-span-2">
-          <h2 className="text-4xl md:text-5xl font-medium text-ink-900 leading-tight">
+          <h2 className="text-5xl md:text-6xl font-medium text-ink-900 leading-tight">
             The world's real-world data is <span className="text-ink-400">siloed, duplicated,</span> and <span className="text-ink-400">invisible to AI.</span>
           </h2>
           <p className="mt-6 text-ink-600 max-w-md">
