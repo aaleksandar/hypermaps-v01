@@ -16,7 +16,7 @@ export function Panel3OnePlace() {
     <PanelShell tag="ONE PLACE · INFINITE DEPTH">
       <div className="grid md:grid-cols-2 gap-12 items-center text-left">
         <div>
-          <h2 className="text-4xl md:text-5xl font-medium text-ink-900 leading-tight">
+          <h2 className="text-5xl md:text-6xl font-medium text-ink-900 leading-tight">
             A place isn't a pin.<br />
             <span className="text-place">It's a stack of layers</span> — and anyone can add one.
           </h2>
