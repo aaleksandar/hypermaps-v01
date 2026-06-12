@@ -23,7 +23,7 @@ const FRICTIONS = [
 
 export function Panel2Problem() {
   return (
-    <PanelShell tag="THE PROBLEM TODAY">
+    <PanelShell tag="PROBLEM">
       <div className="grid lg:grid-cols-[1fr_1.1fr] gap-12 items-center text-left">
         {/* Left: thesis */}
         <div>
@@ -31,9 +31,9 @@ export function Panel2Problem() {
             AI agents are <span className="text-ink-400">blind</span> to the physical world.
           </h2>
           <p className="mt-6 text-ink-600 text-lg max-w-xl">
-            Ask an agent about a street, a building, a neighborhood — and the world
-            it sees is thin, stale, and stitched from whatever scraps it can reach.
-            The real signal is locked up across dozens of walled gardens.
+            Real-time point-of-interest data isn't easily available to AI. Foundation
+            models are not properly aware of the physical world — no model scores
+            above <span className="text-ink-900 font-medium">67% on real-world place reasoning</span>.
           </p>
 
           <div className="mt-8 flex flex-col gap-3">
